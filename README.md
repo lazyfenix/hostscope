@@ -83,7 +83,7 @@ const HostScope = require('hostscope').default;
 
 const hostScope = new HostScope();
 
-hostScope.addService('Google', { host: 'google.com', method: 'TCP', port: 8080 });
+hostScope.addService('Google', { host: 'google.com', method: 'TCP', port: 80 });
 
 (async () => {
     console.log('Checking Google TCP status:');

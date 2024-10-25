@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "strict": true,
+      "outDir": "./dist",        // Output folder for compiled files
+      "declaration": true,       // Generates the index.d.ts
+      "declarationMap": true,    // Generates the .d.ts.map files for debugging
+      "esModuleInterop": true,
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*.ts"],   // Include the source TypeScript files
+    "exclude": ["node_modules"]   // Exclude node_modules from compilation
+  }
+  

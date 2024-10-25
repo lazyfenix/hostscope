@@ -21,7 +21,6 @@
 
 
 ```
-
 npm install hostscope
 ```
 
@@ -30,7 +29,6 @@ npm install hostscope
 
 
 ```
-
 yarn add hostscope
 ```
 

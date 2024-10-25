@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="HostScope-Banner" src="./media/banner.png" />
+  <img alt="HostScope-Banner" src="https://cdn.discordapp.com/attachments/1224721230825783386/1299263994804047883/banner.png?ex=671c9163&is=671b3fe3&hm=64baec3fbd1a2d57becd4042b0d5b25d52202500c6b9295445bf3395845307de&" />
 </div>
 
 <p align="center">A service monitoring tool for checking the status of various services.</p>
@@ -73,7 +73,6 @@ yarn add hostscope
 
 
 </details>
-
 
 <br />
 

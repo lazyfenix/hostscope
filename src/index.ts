@@ -36,7 +36,7 @@ class HostScope {
         this.services[name] = { ...options };
     }
 
-    public async getStatus(name: string) {
+    public async getStatus(name: string): Promise<ServiceStatus> {
         const service = this.services[name];
         if (!service) throw new Error(`Service ${name} does not exist.`);
 
@@ -71,19 +71,26 @@ class HostScope {
                     throw new Error(`Unknown method: ${service.method}`);
             }
 
-            this.outputStatus(name, {
+            return {
                 host: service.host,
                 port: service.port,
                 method: service.method,
                 status,
                 latency,
-            });
+            };
         } catch (error) {
             if (error instanceof Error) {
                 console.error(`Error checking service ${name}: ${error.message}`);
             } else {
                 console.error(`Unknown error checking service ${name}`);
             }
+            return {
+                host: service.host,
+                port: service.port,
+                method: service.method,
+                status: 'Error',
+                latency: null,
+            };
         }
     }
 
@@ -130,10 +137,6 @@ class HostScope {
                 resolve(!err);
             });
         });
-    }
-
-    private outputStatus(name: string, status: ServiceStatus) {
-        console.log(JSON.stringify({ [name]: status }, null, 2));
     }
 }
 

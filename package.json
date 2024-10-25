@@ -49,11 +49,13 @@
         "api monitoring"
     ],
     "repository": {
-
-		"type": "git",
-		"url": "git+https://github.com/lazyfenix/hostscope.git"
-
-	},
+        "type": "git",
+        "url": "https://github.com/lazyfenix/hostscope"
+      },
+      "bugs": {
+        "url": "https://github.com/lazyfenix/hostscope/issues"
+      },
+      "homepage": "https://github.com/lazyfenix",
     "author": "lazyfenix",
     "license": "MIT",
     "devDependencies": {

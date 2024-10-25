@@ -10,7 +10,7 @@
   </a>
 
   <a href="https://www.npmjs.com/package/hostscope">
-    <img alt="license" src="https://img.shields.io/npm/l/hostscope" />
+    <img alt="downloads" src="https://img.shields.io/npm/dt/hostscope" />
   </a>
 </p>
 

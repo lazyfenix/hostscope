@@ -1,6 +1,6 @@
 {
     "name": "hostscope",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "A service monitoring tool for checking the status of various services.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -48,6 +48,12 @@
         "debugging",
         "api monitoring"
     ],
+    "repository": {
+
+		"type": "git",
+		"url": "git+https://github.com/lazyfenix/hostscope.git"
+
+	},
     "author": "lazyfenix",
     "license": "MIT",
     "devDependencies": {

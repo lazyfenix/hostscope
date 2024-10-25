@@ -79,21 +79,21 @@ yarn add hostscope
 <h4>Import and usage example</h4>    
 
 ```js
-
-// Import hostscope
 const HostScope = require('hostscope').default;
 
-// Initialize the HostScope instance
 const hostScope = new HostScope();
 
-// Add a service to test (TCP example)
 hostScope.addService('Google', { host: 'google.com', method: 'TCP', port: 8080 });
 
-// Check the status of the services
 (async () => {
     console.log('Checking Google TCP status:');
-    await hostScope.getStatus('Google');  // Checking Google
-
+    
+    try {
+        const status = await hostScope.getStatus('Google');  
+        console.log(status);  
+    } catch (error) {
+        console.error(`Error: ${error.message}`); 
+    }
 })();
 
 ```
